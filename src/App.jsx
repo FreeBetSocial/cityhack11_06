@@ -1,9 +1,11 @@
 import Profile from "./components/profile/profile";
+import News from "./components/news/news";
 
 const App = ()=>{
     return (
         <div>
-            <Profile/>
+            <News/>
+            {/* <Profile/> */}
         </div>
     )
 }
