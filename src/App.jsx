@@ -4,8 +4,8 @@ import News from "./components/news/news";
 const App = ()=>{
     return (
         <div>
-            <News/>
-            {/* <Profile/> */}
+            {/* <News/> */}
+            <Profile/>
         </div>
     )
 }
