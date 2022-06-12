@@ -47,6 +47,7 @@ const items = [
     }
 ]
 const ManPan =()=>{
+    const lvl =0
     return(
         <div className={"content"}>
             <div className={classes.ManPan}>
@@ -136,8 +137,11 @@ const ManPan =()=>{
                                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5391 4.60412L12.8308 3.3125L13.3317 3.8134L12.0399 5.10502L11.5391 4.60412Z" fill="#0D5185"/>
                                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M5.02696 11.9081L3.73524 13.1998L3.23438 12.699L4.52606 11.4072L5.02696 11.9081Z" fill="#0D5185"/>
                                             </svg>
-                                        <h4>Сложность: высокая</h4>
-                                        </div>   
+                                            <h4 style={{
+                                                        color:lvl==0?"#AD2929":lvl==1?"#FFCC15":"#5CBF41"
+                                                    }}>{lvl==0?"Высокая":lvl==1?"Средняя":"Низкая"}</h4>
+                                        </div> 
+                                      
                                         <div className={classes.row_it2}>
                                                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <g clip-path="url(#clip0_743_12)">
