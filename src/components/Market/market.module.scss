@@ -1,0 +1,11 @@
+.Market{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+@media  (max-width:950px){
+    .Market{
+        flex-direction: column;
+    }
+}
